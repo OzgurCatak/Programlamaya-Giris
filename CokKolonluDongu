@@ -1,0 +1,35 @@
+public static void main(String[] args) {     
+        
+        int onbes[] = new int[6];
+        int bes[] = new int[6];
+        int on[] = new int[6];
+        double ikiussu[] = new double[6];        
+        
+        for (int i= 1,k=0;i<100;i++){            
+            if(i%15==0){               
+                onbes[k]=i;
+                k++;
+            }
+      }        
+         for (int i= 1,k=0;i<=30;i++){            
+            if(i%5==0){ 
+                bes[k]=i;
+                k++;
+            }            
+    }         
+        for (int i= 100,k=0;i>=50;i--){            
+            if(i%10==0){ 
+                on[k]=i;
+                k++;
+            }            
+    } 
+         for (int i= 2,k=0;i<=7;i++){            
+            if(Math.pow(2,i)%2==0){ 
+                ikiussu[k]=Math.pow(2,i);
+                k++;
+            }            
+    }           
+     for(int i=0;i<6;i++) {
+               System.out.println(onbes[i]+"  "+bes[i]+"  "+on[i]+"  "+ikiussu[i]);
+           }   
+    }
